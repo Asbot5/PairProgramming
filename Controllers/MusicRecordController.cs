@@ -27,9 +27,9 @@ namespace PairProgramming.Controllers
 
         [HttpGet]
         [Route("{Title}")]
-        public IEnumerable<MusicRecord> GetAllTitles()
+        public IEnumerable<MusicRecord> GetTitles(string  title)
         {
-            return _manager.GetAllRecords();
+            return _manager.GetByTitle(title);
         }
     }
 }
