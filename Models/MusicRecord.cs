@@ -7,6 +7,9 @@ namespace PairProgramming.Models
 {
     public class MusicRecord
     {
+        /// <summary>
+        /// /hrfhsahf
+        /// </summary>
         public string Title { get; set; }
         public string Artist { get; set; }
         public int Duration { get; set; }
