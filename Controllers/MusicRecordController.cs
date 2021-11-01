@@ -24,6 +24,13 @@ namespace PairProgramming.Controllers
         {
             return _manager.GetAllRecords();
         }
+
+        [HttpGet]
+        [Route("{Title}")]
+        public IEnumerable<MusicRecord> GetAllTitles()
+        {
+            return _manager.GetAllRecords();
+        }
     }
 }
 
